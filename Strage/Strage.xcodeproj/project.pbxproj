@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9A81CDC9E8E463A9870A186 /* libPods-Strage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3225422283294FA5B330813C /* libPods-Strage.a */; };
 		C778B18918F7D856005D7161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C778B18818F7D856005D7161 /* Foundation.framework */; };
 		C778B18B18F7D856005D7161 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C778B18A18F7D856005D7161 /* CoreGraphics.framework */; };
 		C778B18D18F7D856005D7161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C778B18C18F7D856005D7161 /* UIKit.framework */; };
@@ -21,6 +22,11 @@
 		C778B1AA18F7D857005D7161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C778B18C18F7D856005D7161 /* UIKit.framework */; };
 		C778B1B218F7D857005D7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C778B1B018F7D857005D7161 /* InfoPlist.strings */; };
 		C778B1B418F7D857005D7161 /* StrageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C778B1B318F7D857005D7161 /* StrageTests.m */; };
+		C78F8CDB18FA68E900912605 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78F8CDA18FA68E900912605 /* SystemConfiguration.framework */; };
+		C78F8CDD18FA68F100912605 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78F8CDC18FA68F100912605 /* MobileCoreServices.framework */; };
+		C78F8CDF18FA68F800912605 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78F8CDE18FA68F800912605 /* AudioToolbox.framework */; };
+		C78F8CE118FA68FF00912605 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78F8CE018FA68FF00912605 /* CoreLocation.framework */; };
+		C7B1A3D218FA5EC300D9C18E /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B1A3D118FA5EC300D9C18E /* NCMB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2587B0A19E43B7A0E35307 /* Pods-Strage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strage.xcconfig"; path = "Pods/Pods-Strage.xcconfig"; sourceTree = "<group>"; };
+		3225422283294FA5B330813C /* libPods-Strage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Strage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C778B18518F7D856005D7161 /* Strage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C778B18818F7D856005D7161 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C778B18A18F7D856005D7161 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,11 @@
 		C778B1AF18F7D857005D7161 /* StrageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StrageTests-Info.plist"; sourceTree = "<group>"; };
 		C778B1B118F7D857005D7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C778B1B318F7D857005D7161 /* StrageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrageTests.m; sourceTree = "<group>"; };
+		C78F8CDA18FA68E900912605 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C78F8CDC18FA68F100912605 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C78F8CDE18FA68F800912605 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C78F8CE018FA68FF00912605 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C7B1A3D118FA5EC300D9C18E /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NCMB.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +73,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78F8CE118FA68FF00912605 /* CoreLocation.framework in Frameworks */,
+				C78F8CDF18FA68F800912605 /* AudioToolbox.framework in Frameworks */,
+				C78F8CDD18FA68F100912605 /* MobileCoreServices.framework in Frameworks */,
+				C78F8CDB18FA68E900912605 /* SystemConfiguration.framework in Frameworks */,
 				C778B18B18F7D856005D7161 /* CoreGraphics.framework in Frameworks */,
 				C778B18D18F7D856005D7161 /* UIKit.framework in Frameworks */,
+				C7B1A3D218FA5EC300D9C18E /* NCMB.framework in Frameworks */,
 				C778B18918F7D856005D7161 /* Foundation.framework in Frameworks */,
+				B9A81CDC9E8E463A9870A186 /* libPods-Strage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +105,7 @@
 				C778B1AD18F7D857005D7161 /* StrageTests */,
 				C778B18718F7D856005D7161 /* Frameworks */,
 				C778B18618F7D856005D7161 /* Products */,
+				1B2587B0A19E43B7A0E35307 /* Pods-Strage.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +121,16 @@
 		C778B18718F7D856005D7161 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C78F8CE018FA68FF00912605 /* CoreLocation.framework */,
+				C78F8CDE18FA68F800912605 /* AudioToolbox.framework */,
+				C78F8CDC18FA68F100912605 /* MobileCoreServices.framework */,
+				C78F8CDA18FA68E900912605 /* SystemConfiguration.framework */,
+				C7B1A3D118FA5EC300D9C18E /* NCMB.framework */,
 				C778B18818F7D856005D7161 /* Foundation.framework */,
 				C778B18A18F7D856005D7161 /* CoreGraphics.framework */,
 				C778B18C18F7D856005D7161 /* UIKit.framework */,
 				C778B1A718F7D857005D7161 /* XCTest.framework */,
+				3225422283294FA5B330813C /* libPods-Strage.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C778B1B718F7D857005D7161 /* Build configuration list for PBXNativeTarget "Strage" */;
 			buildPhases = (
+				52CEA692B81C4287B2134A89 /* Check Pods Manifest.lock */,
 				C778B18118F7D856005D7161 /* Sources */,
 				C778B18218F7D856005D7161 /* Frameworks */,
 				C778B18318F7D856005D7161 /* Resources */,
+				6EB25E4E0F8148468AFD6386 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +271,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52CEA692B81C4287B2134A89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB25E4E0F8148468AFD6386 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Strage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C778B18118F7D856005D7161 /* Sources */ = {
@@ -373,9 +434,15 @@
 		};
 		C778B1B818F7D857005D7161 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2587B0A19E43B7A0E35307 /* Pods-Strage.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Strage/Strage-Prefix.pch";
 				INFOPLIST_FILE = "Strage/Strage-Info.plist";
@@ -386,9 +453,15 @@
 		};
 		C778B1B918F7D857005D7161 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2587B0A19E43B7A0E35307 /* Pods-Strage.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Strage/Strage-Prefix.pch";
 				INFOPLIST_FILE = "Strage/Strage-Info.plist";
@@ -456,6 +529,7 @@
 				C778B1B918F7D857005D7161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C778B1BA18F7D857005D7161 /* Build configuration list for PBXNativeTarget "StrageTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +538,7 @@
 				C778B1BC18F7D857005D7161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

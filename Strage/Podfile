@@ -1,0 +1,17 @@
+post_install do |installer_representation|
+  installer_representation.project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['CLANG_WARN_DIRECT_OBJC_ISA_USAGE'] = 'YES'
+    end
+  end
+end
+platform :ios, "7.0"
+target "Strage" do
+  pod 'JSONKit', podspec: './JSONKit.podspec'
+  pod 'Facebook-iOS-SDK'  
+end
+
+target "StrageTests" do
+
+end
+

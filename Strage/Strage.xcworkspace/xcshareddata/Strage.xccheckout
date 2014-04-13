@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>83BC8977-885F-4CD2-BD46-4B308E3232D9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Strage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5DA6D9E8-B18D-4D3B-883C-AD8B5415D478</key>
+		<string>ssh://github.com/NIFTYCloud-mbaas/iOS-Samples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Strage/Strage.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5DA6D9E8-B18D-4D3B-883C-AD8B5415D478</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/NIFTYCloud-mbaas/iOS-Samples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5DA6D9E8-B18D-4D3B-883C-AD8B5415D478</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5DA6D9E8-B18D-4D3B-883C-AD8B5415D478</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Samples</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+PODS:
+  - Facebook-iOS-SDK (3.13.1)
+  - JSONKit (1.5)
+
+DEPENDENCIES:
+  - Facebook-iOS-SDK
+  - JSONKit (from `./JSONKit.podspec`)
+
+EXTERNAL SOURCES:
+  JSONKit:
+    :podspec: ./JSONKit.podspec
+
+SPEC CHECKSUMS:
+  Facebook-iOS-SDK: 0d121e16437981fabff9379e07bf646bd5ab245c
+  JSONKit: 219cfb71a7f9a44be22794290f11b2b7b5c7a34e
+
+COCOAPODS: 0.29.0

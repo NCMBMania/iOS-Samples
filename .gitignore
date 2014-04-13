@@ -6,3 +6,7 @@
 #
 # Pods/
 
+
+Strage/Pods/
+.DS_Store
+Strage/NCMB.framework/**/*

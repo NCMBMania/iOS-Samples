@@ -7,12 +7,36 @@
 //
 
 #import "AppDelegate.h"
+#import <NCMB/NCMB.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [NCMB setApplicationKey:@"your_application_key" clientKey:@"your_client_key"];
+    
+    NCMBQuery *query = [NCMBQuery queryWithClassName:@"TestClass"];
+    [query whereKey:@"message" equalTo:@"test"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error == nil) {
+            if ([objects count] > 0) {
+                NSLog(@"[FIND] %@", [[objects objectAtIndex:0] objectForKey:@"message"]);
+            } else {
+                NSError *saveError = nil;
+                NCMBObject *obj = [NCMBObject objectWithClassName:@"TestClass"];
+                [obj setObject:@"Hello, NCMB!" forKey:@"message"];
+                [obj save:&saveError];
+                if (saveError == nil) {
+                    NSLog(@"[SAVE] Done");
+                } else {
+                    NSLog(@"[SAVE-ERROR] %@", saveError);
+                }
+            }
+        } else {
+            NSLog(@"[ERROR] %@", error);
+        }
+    }];
     return YES;
 }
 							
