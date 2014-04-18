@@ -8,5 +8,7 @@
 
 
 Strage/Pods/
+Push/Pods/
 .DS_Store
 Strage/NCMB.framework/**/*
+Push/NCMB.framework/**/*
