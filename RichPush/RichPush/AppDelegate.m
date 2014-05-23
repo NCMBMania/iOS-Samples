@@ -1,23 +1,21 @@
 //
 //  AppDelegate.m
-//  Push
+//  RichPush
 //
-//  Created by 中津川 篤司 on 2014/04/18.
+//  Created by 中津川 篤司 on 2014/05/23.
 //  Copyright (c) 2014年 Atsushi Nakatsugawa. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import <NCMB/NCMB.h>
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    // [NCMB setApplicationKey:@"your_application_key" clientKey:@"your_client_key"];
-    
-    [NCMB setApplicationKey:@"e617bee762e6c0799d20bc3ef45ead1ee87c99276c482a3c5b6b90e013d8a669" clientKey:@"65c3eb97f9fe9e90bba279611d405121ddc1ea9beaea92ea77ee7ceb02b91247"];
+    [NCMB setApplicationKey:@"YOUR_APPLICATION_KEY" clientKey:@"YOUR_CLIENT_KEY"];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+
     [NCMBPush handleRichPush:[launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]];
     return YES;
 }
@@ -28,20 +26,6 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-// 配信端末情報を登録する。
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSLog(@"Registerd.")
-    NCMBInstallation *currentInstallation = [NCMBInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    [currentInstallation save];
-}
-
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
     if ([userInfo.allKeys containsObject:@"com.nifty.RichUrl"]){
         if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive){
@@ -50,9 +34,18 @@
     }
 }
 
-// 通知に関するエラー時はこちら
-- (void) application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    NSLog(@"error: %@", error);
+// 配信端末情報を登録する。
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NCMBInstallation *currentInstallation = [NCMBInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation save];
+}
+
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
